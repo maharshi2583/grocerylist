@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+    background: linear-gradient(285deg, orange, rgb(243, 223, 41));
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.groceries {
+    width: 600px;
+    min-height: 99.5vh;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.groceries h1 {
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+.groceries i {
+    font-size: 2rem;
+    color: orange;
+}
+
+.groceries i:hover {
+    cursor: pointer;
+}
+
+.groceries input {
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 10px 5px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+#allItems h2 {
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+@media(max-width:480px) {
+    .groceries i {
+        font-size: 1.5rem;
+    }
+
+    .groceries input {
+        font-size: 1rem;
+    }
+
+    #allItems h2 {
+        font-size: 1.5rem;
+        margin-left: 25px;
+    }
+}
